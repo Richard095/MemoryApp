@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:id="@+id/items_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorBlue"
+        android:orientation="vertical">
+
+
+        <!--Primera fila -->
+        <LinearLayout
+            android:id="@+id/fila_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:baselineAligned="true">
+
+            <ImageView
+                android:id="@+id/image_uno"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff"
+
+                />
+
+            <ImageView
+                android:id="@+id/image_dos"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+
+            <ImageView
+                android:id="@+id/image_tres"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+        </LinearLayout>
+
+        <!--Segunda fila-->
+        <LinearLayout
+            android:id="@+id/fila_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fila_1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/image_cuatro"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+
+            <ImageView
+                android:id="@+id/image_cinco"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+
+            <ImageView
+                android:id="@+id/image_seis"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+        </LinearLayout>
+        <!--Tercera fila-->
+        <LinearLayout
+            android:id="@+id/fila_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fila_2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/image_siete"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+
+            <ImageView
+                android:id="@+id/image_ocho"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+
+            <ImageView
+                android:id="@+id/image_nueve"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+        </LinearLayout>
+
+        <!--Tercera fila-->
+        <LinearLayout
+            android:id="@+id/fila_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fila_2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/image_dies"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+
+            <ImageView
+                android:id="@+id/image_once"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+
+            <ImageView
+                android:id="@+id/image_doce"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#fff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/txtCouple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/items_container"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_couples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Pares encontrados: "
+            android:textColor="#212121" />
+
+        <TextView
+            android:id="@+id/txtcouples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#212121" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCouple"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#2196f3"
+            android:text="Reiniciar"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
